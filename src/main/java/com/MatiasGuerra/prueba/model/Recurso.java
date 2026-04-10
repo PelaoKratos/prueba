@@ -36,6 +36,5 @@ public class Recurso {
 
     @Min(value = 0, message = "La cantidad no puede ser negativa")
     @Max(value = 1000000, message = "La cantidad no puede ser mayor a 1000000")
-    private int cantidadRecurso;
-
+    private int cantidadRecurso;    
 }

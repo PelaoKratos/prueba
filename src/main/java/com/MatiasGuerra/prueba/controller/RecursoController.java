@@ -30,21 +30,22 @@ public class RecursoController {
     public List<Recurso> getRecurso() {
         return recursoService.readAll();
     }
-    
+
     @PostMapping
     public ResponseEntity<String> postRecurso(@RequestBody Recurso recurso) {
         recursoService.create(recurso);
         return ResponseEntity.ok("Recurso agregado correctamente");
     }
-    //Obtener un recurso por Nombre
-    @GetMapping("nombre/{nombre}")
-    public Recurso getRecursoByNombre(@PathVariable String nombre) {
-        return recursoService.readbyNombre(nombre);
+
+    //Obtener un recurso por id
+    @GetMapping("id/{id}")
+    public Recurso getRecursoById(@PathVariable int id) {
+        return recursoService.readbyId(id);
     }
 
     //Actualizar un Recurso por id
     @PutMapping("{id}")
-    public Recurso putRecurso(@PathVariable int id,@RequestBody Recurso recurso){
+    public Recurso putRecurso(@PathVariable int id, @RequestBody Recurso recurso) {
         return recursoService.updateRecurso(id,recurso);
     }
 

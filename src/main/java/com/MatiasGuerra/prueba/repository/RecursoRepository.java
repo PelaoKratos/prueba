@@ -21,9 +21,9 @@ public class RecursoRepository {
     }
 
     //Buscar por nombre
-    public Recurso buscaPorNombre(String nombre){
+    public Recurso buscaPorId(int id){
         for (Recurso recurso : listarRecursos) {
-            if(recurso.getNombre().equals(nombre)){
+            if(recurso.getId()==id){
                 return recurso;
             }
         }

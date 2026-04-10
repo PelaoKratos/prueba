@@ -22,8 +22,8 @@ public class RecursoService {
         return recursoRepository.crearRecurso(recur);
     }
 
-    public Recurso readbyNombre(String nombre){
-        return recursoRepository.buscaPorNombre(nombre);
+    public Recurso readbyId(int id){
+        return recursoRepository.buscaPorId(id);
     }
 
     public Recurso update(Recurso recur){
