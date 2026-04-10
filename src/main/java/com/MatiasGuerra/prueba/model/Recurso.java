@@ -38,12 +38,4 @@ public class Recurso {
     @Max(value = 1000000, message = "La cantidad no puede ser mayor a 1000000")
     private int cantidadRecurso;
 
-    public Recurso(String nombre, String responsable, int fecha, String tipo, int cantidadRecurso) {
-        this.nombre = nombre;
-        this.responsable = responsable;
-        this.fecha = fecha;
-        this.tipo = tipo;
-        this.cantidadRecurso = cantidadRecurso;
-    }
-
 }
