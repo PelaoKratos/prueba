@@ -26,8 +26,8 @@ public class RecursoService {
         return recursoRepository.buscaPorId(id);
     }
 
-    public Recurso update(Recurso recur){
-        return recursoRepository.actualizar(recur);
+    public Recurso updateRecurso(int id,Recurso recur){
+        return recursoRepository.actualizar(id, recur);
     }
 
     public boolean deleteRecurso(int id){

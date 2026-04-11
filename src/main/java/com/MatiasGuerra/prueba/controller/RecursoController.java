@@ -44,7 +44,7 @@ public class RecursoController {
     }
 
     //Actualizar un Recurso por id
-    @PutMapping("{id}")
+    @PutMapping("id/{id}")
     public Recurso putRecurso(@PathVariable int id, @RequestBody Recurso recurso) {
         return recursoService.updateRecurso(id,recurso);
     }

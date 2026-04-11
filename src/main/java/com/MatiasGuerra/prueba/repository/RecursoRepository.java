@@ -38,7 +38,7 @@ public class RecursoRepository {
 
 
     //Actualizar Recurso por Id
-    public Recurso actualizar(Recurso recur){
+    public Recurso actualizar(int id,Recurso recur){
         Recurso recursoBuscado=buscaPorId(recur.getId());
         if(recursoBuscado!=null){
             recursoBuscado.setNombre(recur.getNombre());
